@@ -1,0 +1,22 @@
+uuid: b19e1995-0e50-4511-a97b-75289557b8ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - doobie
+_core:
+  default_config_hash: 4ZyzzBaA6_JwVO0Zy-1ltbiaOrw-NCZZrxtr9n0GWh8
+id: doobie_help
+theme: doobie
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

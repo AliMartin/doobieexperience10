@@ -1,0 +1,22 @@
+uuid: c2eb13c5-61f8-4014-9233-007abe73ce2b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - doobie
+_core:
+  default_config_hash: LgDgkhH_jocHChUaXTxd9JjOZT54S4kBP8pixytC5Ww
+id: doobie_local_tasks
+theme: doobie
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

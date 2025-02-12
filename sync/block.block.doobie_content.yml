@@ -1,0 +1,22 @@
+uuid: 411bb22b-4c3e-48e1-b52f-5d3eeb99d137
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doobie
+_core:
+  default_config_hash: p5BjFaCmrM8atU3blCK8p4m-gLzJXkSZoHJwBOw3new
+id: doobie_content
+theme: doobie
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

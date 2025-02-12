@@ -1,0 +1,20 @@
+uuid: 170acea3-2a62-4658-aa1c-7fce669d2284
+langcode: en
+status: true
+dependencies:
+  theme:
+    - doobie
+_core:
+  default_config_hash: O8lVKtkHcoY2rPGEiJOW-orza_hUCtnF0c70dMDEdhw
+id: doobie_local_actions
+theme: doobie
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

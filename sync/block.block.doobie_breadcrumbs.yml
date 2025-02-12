@@ -1,0 +1,22 @@
+uuid: 382366b6-cad1-4d01-9c47-be19c6e4e232
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doobie
+_core:
+  default_config_hash: hdaft1zKn4aj8qB2kR8EWwZaQroCC1V6TaFPb3iztZs
+id: doobie_breadcrumbs
+theme: doobie
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

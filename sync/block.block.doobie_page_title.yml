@@ -1,0 +1,20 @@
+uuid: 1737ad81-19b6-450e-9c37-07ff750903cc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - doobie
+_core:
+  default_config_hash: Jrdp8jrEau_qUUVBs7YDZFnmCdc7x38kZS_xF89V36I
+id: doobie_page_title
+theme: doobie
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

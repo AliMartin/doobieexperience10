@@ -1,0 +1,22 @@
+uuid: 50aed98a-32f0-4193-b0c1-4919d62aa994
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doobie
+_core:
+  default_config_hash: vt4sghuSw5JMPMf9usSuhGSfVr2R7MNuJgFi3kW4WqE
+id: doobie_messages
+theme: doobie
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dlmediac/doobieexperience.com
+    - /bin/cp -r * $DEPLOYPATH

@@ -1,0 +1,25 @@
+uuid: 6ad0c27d-9f7a-44d5-85ad-7bd191d13144
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - doobie
+_core:
+  default_config_hash: tdElJ8EpMgzb4O1LSHlCuSgFls4XViqwy2NFxOhcEpY
+id: doobie_branding
+theme: doobie
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

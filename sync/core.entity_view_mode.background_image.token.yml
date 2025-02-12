@@ -1,0 +1,11 @@
+uuid: c002af84-236f-4d56-aee8-b6ec82a336e4
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - background_image
+id: background_image.token
+label: Token
+description: ''
+targetEntityType: background_image
+cache: true

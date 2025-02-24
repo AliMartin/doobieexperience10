@@ -1,0 +1,263 @@
+// Background images
+.background-image-wrapper {
+  #block-doobie-backgroundimage {
+    .background-image {
+      background-position: top center;
+      top: 0;
+    }
+  }
+}
+
+ul.nav-tabs {
+  justify-content: center;
+  a {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+
+
+// Titles
+h1 {
+  color: $red;
+  font-size: xxx-large;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width : 499px) {
+  h1 {
+    font-size: xx-large;
+  }
+}
+
+
+// User
+.path-user {
+  main {
+    margin-bottom: 120px;
+
+    .region-content {
+      text-align: center;
+    }
+  }
+}
+
+
+
+// Inline videos
+.node__content {
+  .field--name-field-image,
+  .media--type-remote-video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    img,
+    iframe {
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+// General article pages
+.page-node-type-article,
+.page-node-type-testimonial,
+.page-node-type-show,
+.page-node-type-landing-page {
+  main {
+    .region-content {
+      text-align: center;
+      max-width: 850px;
+      margin: 50vh auto 90px auto;
+      background-color: rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 30px;
+
+      img {
+        border-radius: $border-radius;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+
+// Individual show pages
+.page-node-type-show {
+  .field--name-field-date {
+    font-family: $headings-font-family;
+    font-size: x-large;
+    margin-bottom: 15px;
+  }
+  .field--name-field-venue {
+    font-size: $font-weight-bold;
+    font-size: x-large;
+    margin-bottom: 15px;
+  }
+  .field--name-field-link {
+    margin-top: 27px;
+    margin-bottom: 27px;
+  }
+}
+
+
+// Multimedia pages
+.page-node-type-multimedia {
+  main {
+    .region-content {
+      text-align: center;
+    }
+  }
+}
+
+.instagram-button {
+  margin: 30px auto;
+}
+
+
+
+// Gallery
+.page-node-type-gallery {
+  main {
+    .region-content {
+      text-align: center;
+    }
+    .node__content ul {
+      margin-top: 30px;
+      margin-bottom: 90px;
+    }
+    .node__content li {
+      border-radius: 10px;
+      border: 1px solid $white;
+    }
+  } 
+}
+
+
+
+// Testimonials
+.page-node-type-testimonial {
+  .field--name-field-venue {
+    margin-bottom: 30px;
+    font-size: large;
+    // font-weight: $font-weight-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.path-testimonials {
+  main {
+    .region-content {
+      text-align: center;
+    }
+    #block-doobie-page-title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+// Video player
+article.media--type-video.media--view-mode-colorbox {
+  border: none !important;
+
+  video {
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.61);
+  }
+}
+
+
+
+// Curator feed
+#block-doobie-curatoriofeed {
+  margin-top: 30px;
+  margin-bottom: 90px;
+
+  a {
+    border-bottom: inherit;
+  }
+
+  article {
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 10px;
+    border-color: inherit;
+    border-width: inherit;
+
+    > div {
+      // border: 1px solid $white !important;
+      border-radius: 10px;
+    }
+
+    .crt-image {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .crt-post-border {
+      border: inherit;
+    }
+
+    .crt-social-icon svg {
+      color: $white;
+    }
+
+    .crt-post-fullname a {
+      font-family: $headings-font-family;
+      font-weight: 400;
+      font-size: 16px;
+      color: $white;
+      text-decoration: none;
+    }
+
+    .crt-post-title {
+      font-family: $headings-font-family;
+      font-weight: 200;
+      font-size: 14px;
+      color: $white;
+    }
+
+    .crt-post-text {
+      color: $white;
+      font-size: 1rem;
+      a {
+        color: $primary;
+        text-decoration: none;
+        &:hover {
+          color: $secondary;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .crt-post-footer {
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 0 0 10px 10px;
+      a {
+        color: $white;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+
+    .crt-post-share {
+      display: none;
+    }
+  }
+}

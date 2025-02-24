@@ -2,3 +2,78 @@
 $form-text-margin-top: 0;
 $legend-font-size: 1rem;
 $table-cell-padding-x: .75rem;
+
+
+// Colours
+$white:     #ffffff !default;
+$black:     #000000 !default;
+$gray:      #BAB1AD !default;
+$gray-dark: #4a4e56 !default;
+$dark:      #010326 !default;
+
+// $red:       #da2e10 !default;
+$red:       #fe0000 !default;
+$pink:      #d90f99 !default;
+$orange:    #d9510f !default;
+$blue:      #0FBED9 !default;
+$blue-dark: #0f54d9 !default;
+$green:     #9ad90f !default;
+$purple:    #a000e1 !default;
+
+
+// Colour variables
+$primary: $red;
+$secondary: $pink;
+$success: $green;
+$info: $blue;
+$warning: $purple;
+$danger: $purple;
+$light: $gray;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "black":      $black,
+);
+
+
+// Fonts
+$font-family-sans-serif: "ABeeZee", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.3rem;
+$line-height-base: 1.3;
+$font-weight-normal: 200;
+$font-weight-bold: 600;
+$body-color: $white;
+
+$headings-font-family: "Caprasimo", serif;
+$headings-font-weight: 400;
+$headings-color: $white;
+
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+
+// Hyperlinks
+$link-color: $primary;
+$link-decoration: underline;
+$link-hover-color: $secondary;
+$link-hover-decoration: underline;
+
+
+// Image border radius
+$border-radius-img: 10px;
+
+
+// Border radius
+$border-radius: 10px;
+$border-radius-img: $border-radius;

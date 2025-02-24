@@ -1,0 +1,118 @@
+.region-nav-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#block-doobie-main-navigation {
+  font-family: $headings-font-family;
+  font-size: 18px;
+  line-height: 1;
+  // position: relative;
+  // top: 2px;
+
+  > ul {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center !important;
+
+    a,
+    span.nav-link {
+      color: $white;
+      background: $red;
+      // background: linear-gradient(329deg, rgba(102,0,0,1) 7%, rgba(254,0,0,1) 77%);
+      display: block;
+      position: relative;
+      padding: 10px 22px;
+      border: 2px solid $red-700;
+      border-radius: 10px;
+      text-shadow: 1px 1px 2px #000;
+      box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+
+      &:hover {
+        color: $white;
+        // background: linear-gradient(329deg, rgba(82,0,0,1) 7%, rgba(198,2,2,1) 77%);
+        background: $red-600;
+        border: 2px solid $red-800;
+      }
+    }
+
+  }
+}
+
+
+#enquiry-menu {
+  // position: relative;
+  // top: -1px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: $headings-font-family;
+  font-size: 18px;
+  line-height: 1;
+
+  i {
+    margin-right: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    background: $red;
+    // background: linear-gradient(329deg, rgba(102,0,0,1) 7%, rgba(254,0,0,1) 77%);
+    display: block;
+    position: relative;
+    padding: 10px 22px;
+    border: 2px solid $red-700;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px #000;
+    // box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+
+    &:hover {
+      color: $white;
+      // background: linear-gradient(329deg, rgba(82,0,0,1) 7%, rgba(198,2,2,1) 77%);
+      background: $red-600;
+      border: 2px solid $red-800;
+    }
+
+  }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1399px) {
+  nav#block-doobie-main-navigation,
+  #block-doobie-enquirymenu {
+    > ul {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  nav#block-doobie-main-navigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 449px) {
+  .region-nav-main {
+    gap: 10px;
+  }
+  #block-doobie-enquirymenu {
+    #enquiry-menu a {
+      padding: 9px;
+    }
+    i {
+      margin: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+}

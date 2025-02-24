@@ -1,0 +1,97 @@
+@media only screen and (min-width : 991px) {
+  #block-doobie-responsivemenumobileicon {
+    display: none;
+  }
+}
+
+#block-doobie-responsivemenumobileicon {
+  span.label {
+    display: none;
+  }
+
+  .responsive-menu-toggle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43x;
+    height: 43px;
+    background: $red;
+    border: 2px solid $red-700;
+    border-radius: 10px;
+  }
+
+  .responsive-menu-toggle-icon::before,
+  .responsive-menu-toggle-icon::after,
+  .responsive-menu-toggle-icon span.icon {
+    width: 16px;
+    height: 2px;
+    left: inherit;
+  }
+
+  .responsive-menu-toggle-icon::before    {top: 14px;}
+  .responsive-menu-toggle-icon span.icon  {top: 19px;}
+  .responsive-menu-toggle-icon::after     {top: 24px;}
+}
+
+body.mm-wrapper_opening {
+  #block-doobie-responsivemenumobileicon {  
+    .responsive-menu-toggle-icon::before    {top: 19px;}
+    .responsive-menu-toggle-icon::after     {top: 19px;}
+  }
+}
+
+
+.mm-menu_theme-white {
+  background-color: $white;
+  --mm-color-background: $white;
+  color: $black;
+
+  .mm-panels {
+    .mm-navbar:before {
+      content: '';
+      background: url("/themes/custom/doobie/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      display: block;
+      position: relative;
+      left: 20%;
+      width: 60%;
+      height: 100px;
+    } 
+
+    .mm-navbar {
+      border-bottom: none;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .mm-navbar a {
+      display: none;
+    }
+  }
+
+  ul.mm-listview {
+    li.mm-listitem {
+      font-family: $headings-font-family;
+      line-height: 1;
+      // text-transform: uppercase;
+      color: $black;
+      --mm-color-text: $black;
+      text-align: center;
+    }
+    li.mm-listitem::after {
+      display: none;
+    }
+    .mm-listitem__text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .mm-listitem_selected > .mm-listitem__text {
+      color: $white;
+      background: $primary;
+    }
+  }
+}
+
+

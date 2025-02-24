@@ -1,0 +1,36 @@
+main .region-content a {
+  color: $primary;
+  text-decoration: inherit;
+  border-bottom: 1px solid $primary;
+  &:hover,
+  &:focus {
+    color: $secondary;
+    text-decoration: inherit;
+    border-bottom: 1px solid $secondary;  
+  }
+}
+
+main .region-content .btn,
+.page-node-type-show .field--name-field-link a {
+  font-family: $headings-font-family;
+  line-height: 1;
+  text-decoration: none;
+  color: $white;
+  background: $red;
+  // background: linear-gradient(329deg, rgba(102,0,0,1) 7%, rgba(254,0,0,1) 77%);
+  padding: 10px 22px;
+  border: 2px solid $red-700;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px #000;
+  // box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.4);
+
+  &:hover,
+  &:focus,
+  &:active {
+    // background: linear-gradient(329deg, rgba(82,0,0,1) 7%, rgba(198,2,2,1) 77%);
+    color: $white;
+    background: $red-600;
+    border: 2px solid $red-800;
+  }
+
+}

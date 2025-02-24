@@ -15,9 +15,11 @@ regions:
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
+  background_image: 'Background image'
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  logos: Logos
   footer: Footer
 libraries-override:
   bootstrap5/global-styling: false

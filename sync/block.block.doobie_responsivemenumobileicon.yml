@@ -1,0 +1,20 @@
+uuid: 4e997f90-f8b6-4f14-b3f1-29f79503f787
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - doobie
+id: doobie_responsivemenumobileicon
+theme: doobie
+region: nav_main
+weight: 0
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

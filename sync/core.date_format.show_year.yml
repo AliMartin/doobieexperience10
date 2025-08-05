@@ -1,0 +1,8 @@
+uuid: e2a1fefb-d908-490a-8af9-1b58cdd6a1ac
+langcode: en-gb
+status: true
+dependencies: {  }
+id: show_year
+label: 'Show year'
+locked: false
+pattern: 'y'

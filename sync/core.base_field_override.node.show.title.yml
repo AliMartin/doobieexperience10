@@ -1,0 +1,18 @@
+uuid: 2fde6275-d59a-4539-9605-426489171010
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.show
+id: node.show.title
+field_name: title
+entity_type: node
+bundle: show
+label: Location
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

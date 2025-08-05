@@ -1,0 +1,30 @@
+uuid: 1a83219d-4057-47ce-9733-da623b7d37cf
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad7a7d49-16c4-4834-9513-d1ef852974fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - doobie
+id: doobie_curator.iofeed
+theme: doobie
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:ad7a7d49-16c4-4834-9513-d1ef852974fa'
+settings:
+  id: 'block_content:ad7a7d49-16c4-4834-9513-d1ef852974fa'
+  label: 'Curator.io feed'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /social

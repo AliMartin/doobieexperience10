@@ -1,0 +1,23 @@
+uuid: 5805a7d0-ce58-4fba-a33b-9d832da96393
+langcode: en-gb
+status: true
+dependencies: {  }
+name: gallery_thumbnail
+label: 'Gallery thumbnail'
+effects:
+  b91dc1b5-04c1-4986-9645-1f73abe076d2:
+    uuid: b91dc1b5-04c1-4986-9645-1f73abe076d2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 830
+      height: 554
+      anchor: center-center
+  3557ded4-e7ac-4872-a5a0-7e732760095f:
+    uuid: 3557ded4-e7ac-4872-a5a0-7e732760095f
+    id: image_scale
+    weight: 2
+    data:
+      width: 600
+      height: null
+      upscale: false

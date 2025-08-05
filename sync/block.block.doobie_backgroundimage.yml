@@ -1,0 +1,20 @@
+uuid: 8e75d9a2-788d-4f1f-a0fb-5c3095464939
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - doobie
+id: doobie_backgroundimage
+theme: doobie
+region: background_image
+weight: 0
+provider: null
+plugin: background_image
+settings:
+  id: background_image
+  label: 'Background Image'
+  label_display: ''
+  provider: background_image
+visibility: {  }

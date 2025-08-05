@@ -1,0 +1,22 @@
+uuid: ba4cf608-28df-4a15-954b-7a79c6ea1f8d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.show
+  module:
+    - text
+id: node.show.field_address
+field_name: field_address
+entity_type: node
+bundle: show
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

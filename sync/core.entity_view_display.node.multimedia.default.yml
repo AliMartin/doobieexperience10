@@ -1,0 +1,29 @@
+uuid: 92ed950e-09aa-4a8e-94c7-e6d439e52a41
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.multimedia.body
+    - node.type.multimedia
+  module:
+    - text
+    - user
+id: node.multimedia.default
+targetEntityType: node
+bundle: multimedia
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

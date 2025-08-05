@@ -1,0 +1,11 @@
+uuid: ee168937-4eed-4f65-a348-36e7f8544641
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.multimedia
+id: node.multimedia
+target_entity_type_id: node
+target_bundle: multimedia
+default_langcode: site_default
+language_alterable: false

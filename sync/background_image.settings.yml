@@ -10,20 +10,40 @@ defaults:
   preload:
     background_color: '#ffffff'
   text:
-    format: full_html
     value: ''
+    format: full_html
 entities:
   node:
     article:
-      enable: false
-      embed: false
+      enable: true
+      embed: true
       require: false
-      group: advanced
+      group: ''
     page:
       enable: false
       embed: false
       require: false
       group: advanced
+    gallery:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    multimedia:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    webform:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+    show:
+      enable: true
+      embed: true
+      require: false
+      group: ''
   user:
     user:
       enable: false
@@ -32,10 +52,28 @@ entities:
       group: advanced
   view:
     view:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+  taxonomy_term:
+    tags:
+      enable: true
+      embed: true
+      require: false
+      group: ''
+  webform_submission:
+    contact:
       enable: false
       embed: false
       require: false
-      group: advanced
+      group: ''
+  webform:
+    webform:
+      enable: false
+      embed: false
+      require: false
+      group: ''
 css:
   base_class: background-image
   retina_rules:

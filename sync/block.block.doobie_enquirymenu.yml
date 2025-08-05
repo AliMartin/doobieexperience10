@@ -1,0 +1,25 @@
+uuid: 6e101bac-64f0-4d20-b586-f6c15ee1aff4
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ce0af155-4cbd-442e-ad18-075b576c23f8'
+  module:
+    - block_content
+  theme:
+    - doobie
+id: doobie_enquirymenu
+theme: doobie
+region: nav_main
+weight: -6
+provider: null
+plugin: 'block_content:ce0af155-4cbd-442e-ad18-075b576c23f8'
+settings:
+  id: 'block_content:ce0af155-4cbd-442e-ad18-075b576c23f8'
+  label: 'Enquiry menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

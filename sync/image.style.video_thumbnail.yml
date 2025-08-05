@@ -1,0 +1,23 @@
+uuid: 418ecf35-3b5e-4f3c-952c-2c8f40bab585
+langcode: en-gb
+status: true
+dependencies: {  }
+name: video_thumbnail
+label: 'Video thumbnail'
+effects:
+  1c4d4f69-77d7-489b-9c00-e02e189ea73a:
+    uuid: 1c4d4f69-77d7-489b-9c00-e02e189ea73a
+    id: image_crop
+    weight: 1
+    data:
+      width: 478
+      height: 268
+      anchor: center-center
+  72a4c6ea-1cc0-471e-bb7f-f750804e8386:
+    uuid: 72a4c6ea-1cc0-471e-bb7f-f750804e8386
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: null
+      upscale: false

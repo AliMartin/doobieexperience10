@@ -1,0 +1,18 @@
+uuid: 3a02e6bf-1eb2-4a9d-979e-05438a67e26f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Multimedia
+type: multimedia
+description: 'A <em>multimedia</em> page is a blank, full container page for displaying media such as Instagram feeds and galleries.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

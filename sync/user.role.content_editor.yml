@@ -3,15 +3,27 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.article
+    - node.type.gallery
+    - node.type.multimedia
+    - node.type.show
+    - node.type.webform
     - taxonomy.vocabulary.tags
   module:
     - contextual
     - file
+    - media
+    - navigation
     - node
     - path
     - system
     - taxonomy
+    - webform
 _core:
   default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
@@ -20,19 +32,66 @@ weight: 2
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access media overview'
+  - 'access navigation'
   - 'administer url aliases'
   - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create gallery content'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create show content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'create video media'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any show content'
+  - 'delete any video media'
   - 'delete article revisions'
+  - 'delete media'
   - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
   - 'delete own files'
+  - 'delete own gallery content'
+  - 'delete own image media'
+  - 'delete own multimedia content'
+  - 'delete own remote_video media'
+  - 'delete own show content'
+  - 'delete own video media'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any gallery content'
+  - 'edit any image media'
+  - 'edit any multimedia content'
+  - 'edit any remote_video media'
+  - 'edit any show content'
+  - 'edit any video media'
+  - 'edit any webform content'
   - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own gallery content'
+  - 'edit own image media'
+  - 'edit own multimedia content'
+  - 'edit own remote_video media'
+  - 'edit own show content'
+  - 'edit own video media'
+  - 'edit own webform content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
+  - 'view any webform submission'
   - 'view own unpublished content'
   - 'view the administration theme'

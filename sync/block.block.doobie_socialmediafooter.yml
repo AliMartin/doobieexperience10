@@ -1,0 +1,25 @@
+uuid: 0e5fe0d0-f706-48d9-8d58-9a90d490fec5
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:830a77c2-bc4f-4b29-8b89-c96df418acd0'
+  module:
+    - block_content
+  theme:
+    - doobie
+id: doobie_socialmediafooter
+theme: doobie
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:830a77c2-bc4f-4b29-8b89-c96df418acd0'
+settings:
+  id: 'block_content:830a77c2-bc4f-4b29-8b89-c96df418acd0'
+  label: 'Social media footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

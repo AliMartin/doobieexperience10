@@ -1,0 +1,15 @@
+uuid: 87fcf7d9-aa2b-4ef1-93cd-d39bc6a224de
+langcode: en-gb
+status: true
+dependencies: {  }
+name: max_800px
+label: 'Max 800px'
+effects:
+  a9f20d4f-84f0-4e09-af15-c9b000b3adf4:
+    uuid: a9f20d4f-84f0-4e09-af15-c9b000b3adf4
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false

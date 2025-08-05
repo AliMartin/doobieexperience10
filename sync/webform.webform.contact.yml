@@ -15,41 +15,70 @@ template: false
 archive: false
 id: contact
 title: Contact
-description: 'Basic email contact webform.'
+description: '<p>Basic email contact webform.</p>'
 categories: {  }
-elements: |
-  name:
-    '#title': 'Your Name'
-    '#type': textfield
-    '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Your Email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
-  subject:
-    '#title': Subject
-    '#type': textfield
-    '#required': true
-    '#test': 'Testing contact webform from [site:name]'
-  message:
-    '#title': Message
-    '#type': textarea
-    '#required': true
-    '#test': 'Please ignore this email.'
+elements: |-
+  step_1:
+    '#type': webform_wizard_page
+    '#title': 'Step 1'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    name:
+      '#type': textfield
+      '#title': Name
+      '#title_display': invisible
+      '#placeholder': 'What is your name?'
+      '#required': true
+      '#default_value': '[current-user:display-name]'
+      '#format_items': comma
+  step_2:
+    '#type': webform_wizard_page
+    '#title': 'Step 2'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    email:
+      '#type': email
+      '#title': Email
+      '#title_display': invisible
+      '#placeholder': 'What is your email address?'
+      '#required': true
+      '#format_items': comma
+  step_3:
+    '#type': webform_wizard_page
+    '#title': 'Step 3'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    telephone:
+      '#type': textfield
+      '#title': Telephone
+      '#title_display': invisible
+      '#placeholder': "What's your telephone number?"
+      '#format_items': comma
+      '#required': true
+  step_4:
+    '#type': webform_wizard_page
+    '#title': 'Step 4'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
+    details:
+      '#type': textarea
+      '#title': Details
+      '#title_display': invisible
+      '#placeholder': 'Finally, if you can, please tell us a bit about your event. For example, the date and location.'
+      '#format_items': comma
+      '#required': true
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#submit__label': Send
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
-  ajax_effect: ''
-  ajax_speed: null
+  ajax_effect: fade
+  ajax_speed: 500
   page: true
   page_submit_path: ''
   page_confirm_path: ''
@@ -111,7 +140,7 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
@@ -231,7 +260,7 @@ handlers:
     handler_id: email_confirmation
     label: 'Email confirmation'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 1
     settings:
@@ -274,21 +303,21 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: david_lynn@live.com
       to_options: {  }
-      bcc_mail: ''
+      bcc_mail: info@alimartin.com
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: noreply@doobieexperience.com
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
+      from_name: '* Doobie Experience website *'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      subject: '* Enquiry from Doobie Experience website *'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

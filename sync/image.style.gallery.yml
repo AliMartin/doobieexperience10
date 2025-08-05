@@ -1,0 +1,15 @@
+uuid: 412ef72d-3594-41b0-af76-bda2f48f2fd3
+langcode: en-gb
+status: true
+dependencies: {  }
+name: gallery
+label: Gallery
+effects:
+  60013420-1828-4503-93f5-bf1839fc960e:
+    uuid: 60013420-1828-4503-93f5-bf1839fc960e
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false

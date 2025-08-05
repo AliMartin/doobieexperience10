@@ -1,0 +1,8 @@
+uuid: a994a1b0-ed9b-46c2-9147-be2a1fd38f34
+langcode: en-gb
+status: true
+dependencies: {  }
+id: show_date
+label: 'Show date'
+locked: false
+pattern: 'l j F Y'
